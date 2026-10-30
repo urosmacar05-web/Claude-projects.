@@ -17,7 +17,7 @@
   $$("[data-i18n-html]").forEach(el => { en[el.dataset.i18nHtml] ??= el.innerHTML.trim(); });
   $$("[data-i18n-ph]").forEach(el => { en[el.dataset.i18nPh] ??= el.getAttribute("placeholder"); });
 
-  const LANG_CODES = { en: "EN", me: "ME", de: "DE", ru: "RU" };
+  const LANG_CODES = { en: "EN", me: "ME", de: "DE", ru: "RU", tr: "TR" };
   let lang = "en";
   const t = key => (I18N[lang] && I18N[lang][key] != null ? I18N[lang][key] : en[key]);
   const money = n => (lang === "en" ? `€${n}` : `${n} €`);
@@ -46,6 +46,7 @@
     const nav = (navigator.language || "en").toLowerCase();
     if (nav.startsWith("de")) return "de";
     if (nav.startsWith("ru")) return "ru";
+    if (nav.startsWith("tr")) return "tr";
     if (/^(sr|hr|bs|cnr|me)/.test(nav)) return "me";
     return "en";
   }
@@ -227,7 +228,7 @@
   const form = $("#book-form");
   const PRICES = { t1: 50, t2: 30, t3: 130 };
   const TOUR_EN = { t1: "Blue Cave Tour (3 h)", t2: "Perast & Lady of the Rock Tour (1 h 30 min)", t3: "Private boat" };
-  const LANG_NAMES = { en: "English", me: "Crnogorski", de: "Deutsch", ru: "Русский" };
+  const LANG_NAMES = { en: "English", me: "Crnogorski", de: "Deutsch", ru: "Русский", tr: "Türkçe" };
   const dateInput = $("#f-date");
   const nameInput = $("#f-name");
   const guestsInput = $("#f-guests");

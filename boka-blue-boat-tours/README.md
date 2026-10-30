@@ -1,6 +1,6 @@
 # Boka Blue Boat Tours — website
 
-Static site (HTML/CSS/JS, no build step). Languages: English, Crnogorski, Deutsch, Русский.
+Static site (HTML/CSS/JS, no build step). Languages: English, Crnogorski, Deutsch, Русский, Türkçe.
 
 ## Deploy
 - **Netlify:** drag this whole folder onto https://app.netlify.com/drop (or onto your existing site's "Deploys" tab).
