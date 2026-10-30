@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Boka Blue Boat Tours — Blue Cave & Bay of Kotor Boat Tours</title>
+  <meta name="description" content="Boat tours from Kotor's old town to Perast, Our Lady of the Rock, the Submarine Tunnels, Mamula Island and the Blue Cave. Daily departures at 09:00, 12:00, 15:00 and 18:00. Private boats available.">
+  <meta name="theme-color" content="#0B1B2B">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Boka Blue Boat Tours — Kotor, Montenegro">
+  <meta property="og:description" content="Blue Cave Tour €50 · Perast & Lady of the Rock €30 · Private boat €130/hour. Departing daily from Park Slobode, Kotor.">
+  <meta property="og:image" content="assets/img/blue-cave.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1B2B'/%3E%3Cpath d='M12 38c6 0 6-4 10-4s4 4 10 4 6-4 10-4 4 4 10 4' fill='none' stroke='%234FB3C8' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M18 30l14-14 14 14' fill='none' stroke='%23D9B27C' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="assets/img/blue-cave.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Boka Blue Boat Tours",
+    "telephone": "+382 60 086 745",
+    "email": "bokablueboattours@gmail.com",
+    "image": "assets/img/blue-cave.webp",
+    "address": {"@type": "PostalAddress", "streetAddress": "Park Slobode", "addressLocality": "Kotor", "addressCountry": "ME"},
+    "makesOffer": [
+      {"@type": "Offer", "name": "Blue Cave Tour (3 hours)", "price": "50", "priceCurrency": "EUR"},
+      {"@type": "Offer", "name": "Perast & Lady of the Rock Tour (1 h 30 min)", "price": "30", "priceCurrency": "EUR"},
+      {"@type": "Offer", "name": "Private boat tour (per hour)", "price": "130", "priceCurrency": "EUR"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Boka Blue Boat Tours — home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M5 25c4 0 4-3 7.5-3s3.5 3 7.5 3 4-3 7.5-3 3.5 3 7.5 3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M5 31c4 0 4-3 7.5-3s3.5 3 7.5 3 4-3 7.5-3 3.5 3 7.5 3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".45"/><path d="M11 18 20 9l9 9" fill="none" stroke="var(--brass-2)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-text"><span class="brand-name">Boka Blue</span><span class="brand-sub">Boat Tours · Kotor</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main">
+        <a href="#tours" data-i18n="nav.tours">Tours</a>
+        <a href="#route" data-i18n="nav.route">The route</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#info" data-i18n="nav.info">Good to know</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang" data-lang-switcher>
+          <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
+            <span class="lang-current">EN</span>
+            <span class="sr-only" data-i18n="lang.label">Change language</span>
+          </button>
+          <ul class="lang-menu" id="lang-menu" role="list" hidden>
+            <li><button type="button" data-set-lang="en" lang="en">English</button></li>
+            <li><button type="button" data-set-lang="me" lang="cnr">Crnogorski</button></li>
+            <li><button type="button" data-set-lang="de" lang="de">Deutsch</button></li>
+            <li><button type="button" data-set-lang="ru" lang="ru">Русский</button></li>
+          </ul>
+        </div>
+        <a class="btn btn-brass btn-sm header-cta" href="#book" data-i18n="nav.book">Book a tour</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+          <span class="sr-only" data-i18n="nav.menu">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile">
+        <a href="#tours" data-i18n="nav.tours">Tours</a>
+        <a href="#route" data-i18n="nav.route">The route</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#info" data-i18n="nav.info">Good to know</a>
+        <a href="#book" data-i18n="nav.book">Book a tour</a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <a class="btn btn-wa" href="https://wa.me/38260086745" target="_blank" rel="noopener" data-wa>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm0-21.6A11.8 11.8 0 0 0 1.9 18L.2 24l6.2-1.6A11.8 11.8 0 1 0 12 .2Z"/></svg>
+          <span>+382 60 086 745</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="hero-backdrop-layer is-active" style="background-image:url(assets/img/blue-cave-blur.webp)"></div>
+        <div class="hero-backdrop-layer" style="background-image:url(assets/img/lady-of-the-rock-mist-blur.webp)"></div>
+        <div class="hero-backdrop-layer" style="background-image:url(assets/img/mamula-sunset-blur.webp)"></div>
+        <div class="hero-backdrop-layer" style="background-image:url(assets/img/cliffs-wake-blur.webp)"></div>
+      </div>
+
+      <div class="hero-media" aria-roledescription="carousel" aria-label="Bay of Kotor highlights">
+        <figure class="slide is-active" style="background-image:url(assets/img/blue-cave-blur.webp)">
+          <img src="assets/img/blue-cave.webp" width="736" height="981" alt="Glowing blue water inside the Blue Cave" fetchpriority="high" decoding="async">
+        </figure>
+        <figure class="slide" style="background-image:url(assets/img/lady-of-the-rock-mist-blur.webp)">
+          <img data-src="assets/img/lady-of-the-rock-mist.webp" width="736" height="1000" alt="Our Lady of the Rock island church with mountains in morning mist" decoding="async">
+        </figure>
+        <figure class="slide" style="background-image:url(assets/img/mamula-sunset-blur.webp)">
+          <img data-src="assets/img/mamula-sunset.webp" width="735" height="980" alt="Aerial view of Mamula Island fortress at sunset with a boat wake" decoding="async">
+        </figure>
+        <figure class="slide" style="background-image:url(assets/img/cliffs-wake-blur.webp)">
+          <img data-src="assets/img/cliffs-wake.webp" width="736" height="1308" alt="Boat wake beside limestone cliffs and a sea cave on the open Adriatic" decoding="async">
+        </figure>
+        <div class="hero-shimmer" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow hero-in" style="--i:0"><span class="eyebrow-line"></span><span data-i18n="hero.eyebrow">Bay of Kotor · Montenegro</span></p>
+        <h1 id="hero-title" class="hero-title hero-in" style="--i:1" data-i18n-html="hero.title">See the Bay of Kotor <em>from the water</em></h1>
+        <p class="hero-lead hero-in" style="--i:2" data-i18n="hero.lead">Boat tours from Kotor's old town to baroque Perast, Our Lady of the Rock, Mamula Island and the glowing Blue Cave.</p>
+        <div class="hero-ctas hero-in" style="--i:3">
+          <a class="btn btn-brass" href="#tours"><span data-i18n="hero.cta1">Explore tours</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="https://wa.me/38260086745" target="_blank" rel="noopener" data-wa>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm0-21.6A11.8 11.8 0 0 0 1.9 18L.2 24l6.2-1.6A11.8 11.8 0 1 0 12 .2Z"/></svg>
+            <span data-i18n="hero.cta2">Book on WhatsApp</span></a>
+        </div>
+        <dl class="hero-meta hero-in" style="--i:4">
+          <div><dt data-i18n="hero.departures">Daily departures</dt><dd>09:00 · 12:00 · 15:00 · 18:00</dd></div>
+          <div><dt data-i18n="hero.fromLabel">Meeting point</dt><dd data-i18n="hero.from">Park Slobode, Kotor old town</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-controls hero-in" style="--i:5">
+        <p class="slide-caption" aria-live="polite"><span class="slide-num">01</span><span class="slide-sep"></span><span class="slide-name" data-slide-name>Blue Cave</span></p>
+        <div class="slide-dots" role="group" aria-label="Choose slide">
+          <button type="button" class="dot is-active" aria-label="Slide 1" aria-current="true"><span></span></button>
+          <button type="button" class="dot" aria-label="Slide 2"><span></span></button>
+          <button type="button" class="dot" aria-label="Slide 3"><span></span></button>
+          <button type="button" class="dot" aria-label="Slide 4"><span></span></button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro section" id="intro">
+      <div class="container">
+        <p class="intro-text" data-reveal data-i18n-html="intro.text">Boka Blue Boat Tours takes you through the Bay of Kotor by boat — from the baroque town of <em>Perast</em> to the glowing waters of the <em>Blue Cave</em>.</p>
+        <ul class="features" role="list">
+          <li data-reveal style="--d:0">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><h3 data-i18n="feat.1.t">Four departures a day</h3><p data-i18n="feat.1.p">09:00, 12:00, 15:00 and 18:00, every day.</p></div>
+          </li>
+          <li data-reveal style="--d:1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5c0-1.4 1.1-2.5 2.5-2.5h13c1.4 0 2.5 1.1 2.5 2.5v1c0 2.5-2 4.5-4.5 4.5-1.6 0-2.4-1.6-4.5-1.6S9.1 16 7.5 16C5 16 3 14 3 11.5v-1Z"/><path d="M15 16v2.5a2.5 2.5 0 0 0 5 0V9"/></svg>
+            <div><h3 data-i18n="feat.2.t">Snorkelling gear included</h3><p data-i18n="feat.2.p">Masks and snorkels are on board — just bring your swimsuit.</p></div>
+          </li>
+          <li data-reveal style="--d:2">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6a3 3 0 0 1-6 0L8 3Z"/><path d="M12 12v8M8.5 21h7"/><path d="M8.6 6h6.8"/></svg>
+            <div><h3 data-i18n="feat.3.t">Bring your own food &amp; drinks</h3><p data-i18n="feat.3.p">You are welcome to bring your own food and drinks on board.</p></div>
+          </li>
+          <li data-reveal style="--d:3">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2.5h4M10.5 2.5v3L8.5 8a3 3 0 0 0-.5 1.7V19a2.5 2.5 0 0 0 2.5 2.5h3A2.5 2.5 0 0 0 16 19V9.7a3 3 0 0 0-.5-1.7l-2-2.5v-3"/><path d="M8 12.5h8"/></svg>
+            <div><h3 data-i18n="feat.4.t">Water on every tour</h3><p data-i18n="feat.4.p">Bottled water is provided for every guest.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ TOURS ============ -->
+    <section class="tours section" id="tours" aria-labelledby="tours-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="tours.eyebrow">Our tours</span></p>
+          <h2 id="tours-title" data-i18n-html="tours.title">Choose your <em>voyage</em></h2>
+          <p class="section-lead" data-i18n="tours.lead">Join a shared departure, or take a private boat just for your group.</p>
+        </header>
+
+        <div class="tour-grid">
+          <article class="tour-card tour-feature" data-reveal style="--d:0">
+            <div class="tour-img">
+              <img src="assets/img/blue-cave-light-sm.webp" srcset="assets/img/blue-cave-light-sm.webp 480w, assets/img/blue-cave-light.webp 736w" sizes="(min-width: 960px) 40vw, 100vw" width="736" height="981" alt="Sunlight glowing through the water of the Blue Cave" loading="lazy" decoding="async">
+              <span class="tour-tag" data-i18n="t1.tag">The complete bay</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-top">
+                <h3 data-i18n="t1.name">Blue Cave Tour</h3>
+                <p class="tour-dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="t1.dur">3 hours</span></p>
+              </div>
+              <p class="tour-desc" data-i18n="t1.desc">The full journey through the bay and out to the open sea, ending with a swim in the Blue Cave.</p>
+              <ol class="tour-stops" role="list">
+                <li data-i18n="t1.s1">Perast or Our Lady of the Rock</li>
+                <li data-i18n="t1.s2">Submarine Tunnels</li>
+                <li data-i18n="t1.s3">Mamula Island</li>
+                <li data-i18n="t1.s4">Swimming in the Blue Cave</li>
+              </ol>
+              <p class="tour-incl"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-i18n="tours.incl">Snorkelling gear &amp; water included</span></p>
+              <div class="tour-foot">
+                <p class="price"><span class="price-amt" data-price="50">€50</span><span class="price-unit" data-i18n="price.pp">per person</span></p>
+                <a class="btn btn-brass" href="#book" data-book-tour="t1"><span data-i18n="tours.book">Book this tour</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tour-card" data-reveal style="--d:1">
+            <div class="tour-img">
+              <img src="assets/img/island-arch-sm.webp" srcset="assets/img/island-arch-sm.webp 480w, assets/img/island-arch.webp 675w" sizes="(min-width: 960px) 28vw, 100vw" width="675" height="1200" alt="Boats on the bay seen through a stone arch on Our Lady of the Rock" loading="lazy" decoding="async">
+              <span class="tour-tag" data-i18n="t2.tag">A quick taste</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-top">
+                <h3 data-i18n="t2.name">Perast & Lady of the Rock</h3>
+                <p class="tour-dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="t2.dur">1 h 30 min</span></p>
+              </div>
+              <p class="tour-desc" data-i18n="t2.desc">A shorter cruise to the baroque town of Perast and the island church of Our Lady of the Rock.</p>
+              <ol class="tour-stops" role="list">
+                <li data-i18n="t2.s1">Perast</li>
+                <li data-i18n="t2.s2">Our Lady of the Rock</li>
+              </ol>
+              <p class="tour-incl"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-i18n="tours.water">Bottled water included</span></p>
+              <div class="tour-foot">
+                <p class="price"><span class="price-amt" data-price="30">€30</span><span class="price-unit" data-i18n="price.pp">per person</span></p>
+                <a class="btn btn-outline" href="#book" data-book-tour="t2"><span data-i18n="tours.book">Book this tour</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tour-card tour-private" data-reveal style="--d:2">
+            <div class="tour-img">
+              <img src="assets/img/mamula-night-sm.webp" srcset="assets/img/mamula-night-sm.webp 480w, assets/img/mamula-night.webp 736w" sizes="(min-width: 960px) 28vw, 100vw" width="736" height="920" alt="Mamula Island fortress lit up at dusk" loading="lazy" decoding="async">
+              <span class="tour-tag" data-i18n="t3.tag">Just your group</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-top">
+                <h3 data-i18n="t3.name">Private Boat</h3>
+                <p class="tour-dur"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="t3.dur">You choose</span></p>
+              </div>
+              <p class="tour-desc" data-i18n="t3.desc">Your own boat for your family or friends. Tell us where you'd like to go and when, and we'll plan it with you.</p>
+              <p class="tour-incl"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-i18n="t3.incl">Bottle of champagne &amp; water included</span></p>
+              <div class="tour-foot">
+                <p class="price"><span class="price-amt" data-price="130">€130</span><span class="price-unit" data-i18n="price.ph">per hour</span></p>
+                <a class="btn btn-outline" href="#book" data-book-tour="t3"><span data-i18n="tours.request">Request a private boat</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ROUTE ============ -->
+    <section class="route section" id="route" aria-labelledby="route-title">
+      <div class="container">
+        <header class="section-head section-head-light" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="route.eyebrow">The Blue Cave Tour</span></p>
+          <h2 id="route-title" data-i18n-html="route.title">Three hours, <em>stop by stop</em></h2>
+          <p class="section-lead" data-i18n="route.lead">From the walls of Kotor to the mouth of the bay and back.</p>
+        </header>
+
+        <ol class="route-list" role="list">
+          <li class="route-line" aria-hidden="true"><span class="route-line-fill"></span></li>
+
+          <li class="stop stop-start" data-reveal>
+            <span class="stop-pin" aria-hidden="true"></span>
+            <div class="stop-text">
+              <p class="stop-num">00</p>
+              <h3 data-i18n="r0.t">Kotor · Park Slobode</h3>
+              <p data-i18n="r0.p">Board in the heart of Kotor's old town, beneath the medieval walls.</p>
+            </div>
+          </li>
+
+          <li class="stop" data-reveal>
+            <span class="stop-pin" aria-hidden="true"></span>
+            <figure class="stop-img"><img src="assets/img/lady-of-the-rock-aerial-sm.webp" srcset="assets/img/lady-of-the-rock-aerial-sm.webp 480w, assets/img/lady-of-the-rock-aerial.webp 736w" sizes="(min-width: 960px) 34vw, 85vw" width="736" height="920" alt="Our Lady of the Rock and St George island in front of Perast" loading="lazy" decoding="async"></figure>
+            <div class="stop-text">
+              <p class="stop-num">01</p>
+              <h3 data-i18n="r1.t">Perast & Our Lady of the Rock</h3>
+              <p data-i18n="r1.p">Baroque palaces and bell towers, and an island church built on a reef that sailors raised stone by stone.</p>
+            </div>
+          </li>
+
+          <li class="stop" data-reveal>
+            <span class="stop-pin" aria-hidden="true"></span>
+            <figure class="stop-img"><img src="assets/img/cliffs-wake-sm.webp" srcset="assets/img/cliffs-wake-sm.webp 480w, assets/img/cliffs-wake.webp 736w" sizes="(min-width: 960px) 34vw, 85vw" width="736" height="1308" alt="Limestone cliffs of the Luštica peninsula" loading="lazy" decoding="async"></figure>
+            <div class="stop-text">
+              <p class="stop-num">02</p>
+              <h3 data-i18n="r2.t">Submarine Tunnels</h3>
+              <p data-i18n="r2.p">Hidden shelters carved into the cliffs, where the Yugoslav navy once kept its submarines.</p>
+            </div>
+          </li>
+
+          <li class="stop" data-reveal>
+            <span class="stop-pin" aria-hidden="true"></span>
+            <figure class="stop-img"><img src="assets/img/mamula-sunset-sm.webp" srcset="assets/img/mamula-sunset-sm.webp 480w, assets/img/mamula-sunset.webp 735w" sizes="(min-width: 960px) 34vw, 85vw" width="735" height="980" alt="Mamula Island fortress at the entrance to the bay" loading="lazy" decoding="async"></figure>
+            <div class="stop-text">
+              <p class="stop-num">03</p>
+              <h3 data-i18n="r3.t">Mamula Island</h3>
+              <p data-i18n="r3.p">A round 19th-century fortress guarding the entrance to the Bay of Kotor.</p>
+            </div>
+          </li>
+
+          <li class="stop" data-reveal>
+            <span class="stop-pin" aria-hidden="true"></span>
+            <figure class="stop-img"><img src="assets/img/clear-water-sm.webp" srcset="assets/img/clear-water-sm.webp 480w, assets/img/clear-water.webp 736w" sizes="(min-width: 960px) 34vw, 85vw" width="736" height="981" alt="Crystal-clear turquoise water at a sea cave" loading="lazy" decoding="async"></figure>
+            <div class="stop-text">
+              <p class="stop-num">04</p>
+              <h3 data-i18n="r4.t">Swim in the Blue Cave</h3>
+              <p data-i18n="r4.p">Sunlight enters beneath the waterline and lights the cave a glowing blue. Jump in — the snorkelling gear is on board.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="route-cta" data-reveal>
+          <a class="btn btn-brass" href="#book" data-book-tour="t1"><span data-i18n="route.cta">Book the Blue Cave Tour — €50</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPARTURES ============ -->
+    <section class="departures section" aria-labelledby="dep-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="dep.eyebrow">Shared departures</span></p>
+          <h2 id="dep-title" data-i18n-html="dep.title">Every day, <em>four times a day</em></h2>
+        </header>
+        <ul class="times" role="list">
+          <li data-reveal style="--d:0"><span class="time">09:00</span><span class="time-label" data-i18n="dep.morning">Morning</span></li>
+          <li data-reveal style="--d:1"><span class="time">12:00</span><span class="time-label" data-i18n="dep.midday">Midday</span></li>
+          <li data-reveal style="--d:2"><span class="time">15:00</span><span class="time-label" data-i18n="dep.afternoon">Afternoon</span></li>
+          <li data-reveal style="--d:3"><span class="time">18:00</span><span class="time-label" data-i18n="dep.evening">Evening</span></li>
+        </ul>
+        <p class="dep-note" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span data-i18n="dep.note">All tours depart from Park Slobode in Kotor's old town. Private boats leave whenever suits you.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container gallery-head">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="gallery.eyebrow">Gallery</span></p>
+          <h2 id="gallery-title" data-i18n-html="gallery.title">Colours of <em>the bay</em></h2>
+        </header>
+        <div class="gallery-nav" data-reveal>
+          <button type="button" class="round-btn" data-gallery-prev><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span class="sr-only" data-i18n="gallery.prev">Previous photos</span></button>
+          <button type="button" class="round-btn" data-gallery-next><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span class="sr-only" data-i18n="gallery.next">Next photos</span></button>
+        </div>
+      </div>
+      <ul class="gallery-track" role="list" tabindex="0" aria-label="Photo gallery">
+        <li><img src="assets/img/cave-entrance-sm.webp" width="480" height="640" alt="A boat at the bright entrance of a sea cave" loading="lazy" decoding="async"></li>
+        <li><img src="assets/img/perast-sunset-sm.webp" width="480" height="715" alt="Perast waterfront and bell tower at golden hour" loading="lazy" decoding="async"></li>
+        <li><img src="assets/img/blue-cave-sm.webp" width="480" height="640" alt="Blue light reflecting on the walls of the Blue Cave" loading="lazy" decoding="async"></li>
+        <li><img src="assets/img/lady-of-the-rock-aerial-sm.webp" width="480" height="600" alt="Aerial view of Our Lady of the Rock" loading="lazy" decoding="async"></li>
+        <li><img src="assets/img/clear-water-sm.webp" width="480" height="640" alt="Turquoise water over white rocks" loading="lazy" decoding="async"></li>
+        <li><img src="assets/img/mamula-night-sm.webp" width="480" height="600" alt="Mamula Island fortress lit at night" loading="lazy" decoding="async"></li>
+        <li><img src="assets/img/cave-night-sm.webp" width="480" height="840" alt="A small boat floating in a dark blue sea cave" loading="lazy" decoding="async"></li>
+        <li><img src="assets/img/island-arch-sm.webp" width="480" height="853" alt="Stone arch framing boats on the bay" loading="lazy" decoding="async"></li>
+      </ul>
+    </section>
+
+    <!-- ============ INFO / FAQ ============ -->
+    <section class="info section" id="info" aria-labelledby="info-title">
+      <div class="container info-grid">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="faq.eyebrow">Before you sail</span></p>
+          <h2 id="info-title" data-i18n-html="faq.title">Good <em>to know</em></h2>
+          <p class="section-lead" data-i18n="faq.lead">Still have a question? Message us on WhatsApp.</p>
+          <a class="link-arrow" href="https://wa.me/38260086745" target="_blank" rel="noopener" data-wa><span data-i18n="faq.ask">Ask on WhatsApp</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </header>
+        <div class="faq" data-reveal>
+          <details>
+            <summary><span data-i18n="q1">Where does the tour start?</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a"><p data-i18n="a1">All tours depart from Park Slobode in Kotor's old town. Please arrive a few minutes before your departure time.</p></div>
+          </details>
+          <details>
+            <summary><span data-i18n="q2">What is included?</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a"><p data-i18n="a2">Snorkelling equipment and bottled water are included on every tour. On the private boat we also provide a bottle of champagne.</p></div>
+          </details>
+          <details>
+            <summary><span data-i18n="q3">Can I bring food and drinks?</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a"><p data-i18n="a3">Yes — you are welcome to bring your own food and drinks on board.</p></div>
+          </details>
+          <details>
+            <summary><span data-i18n="q4">What should I bring?</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a"><p data-i18n="a4">Swimwear, a towel and sunscreen for the Blue Cave swim — plus your own food and drinks if you like.</p></div>
+          </details>
+          <details>
+            <summary><span data-i18n="q5">How does the private boat work?</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a"><p data-i18n="a5">A private boat costs €130 per hour for your whole group. Tell us how long you'd like and which places you want to see, and we'll arrange it with you.</p></div>
+          </details>
+          <details>
+            <summary><span data-i18n="q6">How do I book?</span><span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a"><p data-i18n="a6">Send us a message on WhatsApp at +382 60 086 745, email bokablueboattours@gmail.com, or fill in the booking form below — it opens WhatsApp with your request ready to send.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="book section" id="book" aria-labelledby="book-title">
+      <div class="book-bg" aria-hidden="true"><img src="assets/img/cave-night-sm.webp" alt="" width="480" height="840" loading="lazy" decoding="async"></div>
+      <div class="container book-grid">
+        <header class="section-head section-head-light" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="book.eyebrow">Reservations</span></p>
+          <h2 id="book-title" data-i18n-html="book.title">Reserve your <em>seat on the water</em></h2>
+          <p class="section-lead" data-i18n="book.lead">Fill in the details and we'll confirm your booking on WhatsApp.</p>
+
+          <ul class="contact-list" role="list">
+            <li>
+              <a href="https://wa.me/38260086745" target="_blank" rel="noopener" data-wa>
+                <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm0-21.6A11.8 11.8 0 0 0 1.9 18L.2 24l6.2-1.6A11.8 11.8 0 1 0 12 .2Z"/></svg></span>
+                <span><span class="contact-label">WhatsApp</span><span class="contact-val">+382 60 086 745</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+38260086745">
+                <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span>
+                <span><span class="contact-label" data-i18n="contact.call">Call us</span><span class="contact-val">+382 60 086 745</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:bokablueboattours@gmail.com">
+                <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>
+                <span><span class="contact-label" data-i18n="contact.email">Email us</span><span class="contact-val">bokablueboattours@gmail.com</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Slobode%2C+Kotor%2C+Montenegro" target="_blank" rel="noopener">
+                <span class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                <span><span class="contact-label" data-i18n="contact.meet">Meeting point</span><span class="contact-val" data-i18n="contact.meetVal">Park Slobode, Kotor — directions</span></span>
+              </a>
+            </li>
+          </ul>
+        </header>
+
+        <form class="book-form" id="book-form" novalidate data-reveal>
+          <fieldset class="tour-choice">
+            <legend data-i18n="f.tour">Choose a tour</legend>
+            <label class="choice">
+              <input type="radio" name="tour" value="t1" checked>
+              <span class="choice-box"><span class="choice-name" data-i18n="t1.name">Blue Cave Tour</span><span class="choice-meta"><span data-i18n="t1.dur">3 hours</span> · <span data-price="50">€50</span></span></span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="tour" value="t2">
+              <span class="choice-box"><span class="choice-name" data-i18n="t2.name">Perast & Lady of the Rock</span><span class="choice-meta"><span data-i18n="t2.dur">1 h 30 min</span> · <span data-price="30">€30</span></span></span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="tour" value="t3">
+              <span class="choice-box"><span class="choice-name" data-i18n="t3.name">Private Boat</span><span class="choice-meta"><span data-price="130">€130</span> / <span data-i18n="f.hourShort">hour</span></span></span>
+            </label>
+          </fieldset>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-date" data-i18n="f.date">Date</label>
+              <input id="f-date" name="date" type="date" required aria-describedby="err-date">
+              <p class="field-err" id="err-date" data-i18n="f.errDate" hidden>Please choose a date.</p>
+            </div>
+            <div class="field" data-shared-only>
+              <label for="f-time" data-i18n="f.time">Departure</label>
+              <select id="f-time" name="time">
+                <option>09:00</option><option>12:00</option><option>15:00</option><option>18:00</option>
+              </select>
+            </div>
+            <div class="field" data-private-only hidden>
+              <label for="f-hours" data-i18n="f.hours">Hours</label>
+              <div class="stepper">
+                <button type="button" data-step="-1" data-target="f-hours" aria-label="−1">−</button>
+                <input id="f-hours" name="hours" type="number" inputmode="numeric" min="1" max="10" value="2">
+                <button type="button" data-step="1" data-target="f-hours" aria-label="+1">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-guests" data-i18n="f.guests">Guests</label>
+              <div class="stepper">
+                <button type="button" data-step="-1" data-target="f-guests" aria-label="−1">−</button>
+                <input id="f-guests" name="guests" type="number" inputmode="numeric" min="1" max="40" value="2">
+                <button type="button" data-step="1" data-target="f-guests" aria-label="+1">+</button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-name" data-i18n="f.name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+              <p class="field-err" id="err-name" data-i18n="f.errName" hidden>Please tell us your name.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-note"><span data-i18n="f.note">Message</span> <span class="optional" data-i18n="f.optional">(optional)</span></label>
+            <textarea id="f-note" name="note" rows="3" data-i18n-ph="f.notePh" placeholder="Anything we should know?"></textarea>
+          </div>
+
+          <div class="form-foot">
+            <p class="total" aria-live="polite"><span class="total-label" data-i18n="f.total">Total</span><span class="total-amt" data-total>€100</span><span class="total-note" data-i18n="f.totalNote">Estimated — confirmed on WhatsApp</span></p>
+            <button class="btn btn-brass btn-lg" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm0-21.6A11.8 11.8 0 0 0 1.9 18L.2 24l6.2-1.6A11.8 11.8 0 1 0 12 .2Z"/></svg>
+              <span data-i18n="f.submit">Send request on WhatsApp</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Boka Blue <em>Boat Tours</em></p>
+        <p class="footer-tag" data-i18n="footer.tag">Boat tours through the Bay of Kotor, from Perast to the Blue Cave.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <p class="footer-h" data-i18n="footer.contact">Contact</p>
+          <a href="https://wa.me/38260086745" target="_blank" rel="noopener" data-wa>WhatsApp · +382 60 086 745</a>
+          <a href="tel:+38260086745" data-i18n="contact.call">Call us</a>
+          <a href="mailto:bokablueboattours@gmail.com">bokablueboattours@gmail.com</a>
+        </div>
+        <div>
+          <p class="footer-h" data-i18n="contact.meet">Meeting point</p>
+          <p>Park Slobode<br>Kotor, Montenegro</p>
+        </div>
+        <div>
+          <p class="footer-h" data-i18n="nav.tours">Tours</p>
+          <a href="#tours" data-i18n="t1.name">Blue Cave Tour</a>
+          <a href="#tours" data-i18n="t2.name">Perast & Lady of the Rock</a>
+          <a href="#tours" data-i18n="t3.name">Private Boat</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Boka Blue Boat Tours</p>
+      <a href="#top" class="link-arrow link-up"><span data-i18n="footer.top">Back to top</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+
+  <!-- ============ MOBILE BOOKING BAR ============ -->
+  <div class="book-bar" aria-hidden="true">
+    <p class="book-bar-price"><span data-i18n="bar.from">From</span> <strong data-price="30">€30</strong></p>
+    <a class="btn btn-brass btn-sm" href="#book" tabindex="-1" data-i18n="nav.book">Book a tour</a>
+    <a class="book-bar-wa" href="https://wa.me/38260086745" target="_blank" rel="noopener" tabindex="-1" aria-label="WhatsApp" data-wa>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm0-21.6A11.8 11.8 0 0 0 1.9 18L.2 24l6.2-1.6A11.8 11.8 0 1 0 12 .2Z"/></svg>
+    </a>
+  </div>
+
+  <script src="i18n.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
