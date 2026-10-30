@@ -2,12 +2,17 @@
    only JS-only English strings are listed here. */
 window.I18N = {
   en: {
+    "dep.nextToday": "Next departure today at {t} — in {d}",
+    "dep.nextTomorrow": "Next departure tomorrow at {t}",
     "meta.title": "Boka Blue Boat Tours — Blue Cave & Bay of Kotor Boat Tours",
     "slides": ["Blue Cave", "Our Lady of the Rock", "Mamula Island", "Open Adriatic"],
     "htmlLang": "en"
   },
 
   me: {
+    "intro.eyebrow": "Dobro došli na brod", "intro.stops": "stanica na turi Plava pećina",
+    "mq.kotor": "Kotor", "mq.perast": "Perast", "mq.cave": "Plava pećina",
+    "dep.nextToday": "Sljedeći polazak danas u {t} — za {d}", "dep.nextTomorrow": "Sljedeći polazak sjutra u {t}",
     "htmlLang": "cnr",
     "meta.title": "Boka Blue Boat Tours — Plava pećina i ture brodom po Boki Kotorskoj",
     "slides": ["Plava pećina", "Gospa od Škrpjela", "Ostrvo Mamula", "Otvoreno more"],
@@ -68,6 +73,9 @@ window.I18N = {
   },
 
   de: {
+    "intro.eyebrow": "Willkommen an Bord", "intro.stops": "Stationen auf der Blaue-Grotte-Tour",
+    "mq.kotor": "Kotor", "mq.perast": "Perast", "mq.cave": "Blaue Grotte",
+    "dep.nextToday": "Nächste Abfahrt heute um {t} — in {d}", "dep.nextTomorrow": "Nächste Abfahrt morgen um {t}",
     "htmlLang": "de",
     "meta.title": "Boka Blue Boat Tours — Blaue Grotte & Bootstouren in der Bucht von Kotor",
     "slides": ["Blaue Grotte", "Gospa od Škrpjela", "Insel Mamula", "Offene Adria"],
@@ -128,6 +136,9 @@ window.I18N = {
   },
 
   ru: {
+    "intro.eyebrow": "Добро пожаловать на борт", "intro.stops": "остановок на туре «Голубая пещера»",
+    "mq.kotor": "Котор", "mq.perast": "Пераст", "mq.cave": "Голубая пещера",
+    "dep.nextToday": "Ближайшее отправление сегодня в {t} — через {d}", "dep.nextTomorrow": "Ближайшее отправление завтра в {t}",
     "htmlLang": "ru",
     "meta.title": "Boka Blue Boat Tours — Голубая пещера и морские прогулки по Которскому заливу",
     "slides": ["Голубая пещера", "Госпа-од-Шкрпьела", "Остров Мамула", "Открытое море"],

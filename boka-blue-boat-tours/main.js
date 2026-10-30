@@ -34,6 +34,7 @@
     $$("[data-set-lang]").forEach(b => b.setAttribute("aria-current", b.dataset.setLang === lang ? "true" : "false"));
     setSlideName(current, false);
     updateTotal();
+    updateNextDep();
     store.set("bbt-lang", lang);
   }
 
@@ -308,6 +309,34 @@
     const win = window.open(url, "_blank", "noopener");
     if (!win) location.href = url;
   });
+
+  /* ================= Next departure (Kotor time) ================= */
+  const nextDep = $("[data-next-dep]");
+  const nextDepText = $("[data-next-dep-text]");
+  const depTimes = $$("[data-time]");
+  function kotorMinutes() {
+    try {
+      const parts = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Podgorica", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date());
+      const get = type => +parts.find(p => p.type === type).value;
+      return get("hour") * 60 + get("minute");
+    } catch (e) { return null; }
+  }
+  function updateNextDep() {
+    const now = kotorMinutes();
+    if (now == null || !depTimes.length) return;
+    const mins = depTimes.map(el => { const [h, m] = el.dataset.time.split(":"); return +h * 60 + +m; });
+    const i = mins.findIndex(m => m > now);
+    depTimes.forEach((el, k) => el.closest("li").classList.toggle("is-next", k === i));
+    if (i === -1) {
+      nextDepText.textContent = t("dep.nextTomorrow").replace("{t}", depTimes[0].dataset.time);
+    } else {
+      const d = mins[i] - now;
+      const dur = d >= 60 ? `${Math.floor(d / 60)} h ${pad(d % 60)} min` : `${d} min`;
+      nextDepText.textContent = t("dep.nextToday").replace("{t}", depTimes[i].dataset.time).replace("{d}", dur);
+    }
+    nextDep.hidden = false;
+  }
+  setInterval(updateNextDep, 30000);
 
   /* ================= Misc ================= */
   $$("[data-year]").forEach(el => { el.textContent = new Date().getFullYear(); });

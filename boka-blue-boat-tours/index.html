@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap">
   <link rel="preload" as="image" href="assets/img/blue-cave.webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add("js")</script>
@@ -119,6 +119,17 @@
         <div class="hero-shimmer" aria-hidden="true"></div>
       </div>
 
+      <div class="hero-badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="badge-circle" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/></defs>
+          <text><textPath href="#badge-circle" textLength="482">Kotor · Perast · Mamula · Blue Cave · </textPath></text></svg>
+        <span class="hero-badge-core"><svg viewBox="0 0 40 40"><path d="M5 25c4 0 4-3 7.5-3s3.5 3 7.5 3 4-3 7.5-3 3.5 3 7.5 3"/><path d="M11 18 20 9l9 9"/></svg></span>
+      </div>
+      <a class="hero-chip" href="#tours">
+        <span class="hero-chip-label" data-i18n="bar.from">From</span>
+        <span class="hero-chip-price" data-price="30">€30</span>
+        <span class="hero-chip-sub" data-i18n="price.pp">per person</span>
+      </a>
+
       <div class="hero-content">
         <p class="eyebrow hero-in" style="--i:0"><span class="eyebrow-line"></span><span data-i18n="hero.eyebrow">Bay of Kotor · Montenegro</span></p>
         <h1 id="hero-title" class="hero-title hero-in" style="--i:1" data-i18n-html="hero.title">See the Bay of Kotor <em>from the water</em></h1>
@@ -148,10 +159,28 @@
 
     </section>
 
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span data-i18n="mq.kotor">Kotor</span><i></i><span data-i18n="mq.perast">Perast</span><i></i><span data-i18n="t2.s2">Our Lady of the Rock</span><i></i><span data-i18n="t1.s2">Submarine Tunnels</span><i></i><span data-i18n="t1.s3">Mamula Island</span><i></i><span data-i18n="mq.cave">Blue Cave</span><i></i>
+        <span data-i18n="mq.kotor">Kotor</span><i></i><span data-i18n="mq.perast">Perast</span><i></i><span data-i18n="t2.s2">Our Lady of the Rock</span><i></i><span data-i18n="t1.s2">Submarine Tunnels</span><i></i><span data-i18n="t1.s3">Mamula Island</span><i></i><span data-i18n="mq.cave">Blue Cave</span><i></i>
+      </div>
+    </div>
+
     <!-- ============ INTRO ============ -->
     <section class="intro section" id="intro">
       <div class="container">
+        <div class="intro-grid">
+        <div class="intro-copy">
+        <p class="eyebrow" data-reveal><span class="eyebrow-line"></span><span data-i18n="intro.eyebrow">Welcome aboard</span></p>
         <p class="intro-text" data-reveal data-i18n-html="intro.text">Boka Blue Boat Tours takes you through the Bay of Kotor by boat — from the baroque town of <em>Perast</em> to the glowing waters of the <em>Blue Cave</em>.</p>
+        </div>
+        <div class="intro-collage" aria-hidden="true">
+          <figure class="ic-a" data-reveal><img src="assets/img/perast-sunset-sm.webp" width="480" height="715" alt="" loading="lazy" decoding="async"></figure>
+          <figure class="ic-b" data-reveal style="--d:2"><img src="assets/img/clear-water-sm.webp" width="480" height="640" alt="" loading="lazy" decoding="async"></figure>
+          <p class="ic-note" data-reveal style="--d:3"><span class="ic-note-num">5</span><span data-i18n="intro.stops">stops on the Blue Cave Tour</span></p>
+        </div>
+        </div>
         <ul class="features" role="list">
           <li data-reveal style="--d:0">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
@@ -327,12 +356,13 @@
         <header class="section-head" data-reveal>
           <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="dep.eyebrow">Shared departures</span></p>
           <h2 id="dep-title" data-i18n-html="dep.title">Every day, <em>four times a day</em></h2>
+          <p class="next-dep" data-next-dep hidden><span class="live-dot" aria-hidden="true"></span><span data-next-dep-text></span></p>
         </header>
         <ul class="times" role="list">
-          <li data-reveal style="--d:0"><span class="time">09:00</span><span class="time-label" data-i18n="dep.morning">Morning</span></li>
-          <li data-reveal style="--d:1"><span class="time">12:00</span><span class="time-label" data-i18n="dep.midday">Midday</span></li>
-          <li data-reveal style="--d:2"><span class="time">15:00</span><span class="time-label" data-i18n="dep.afternoon">Afternoon</span></li>
-          <li data-reveal style="--d:3"><span class="time">18:00</span><span class="time-label" data-i18n="dep.evening">Evening</span></li>
+          <li data-reveal style="--d:0"><span class="time" data-time="09:00">09:00</span><span class="time-label" data-i18n="dep.morning">Morning</span></li>
+          <li data-reveal style="--d:1"><span class="time" data-time="12:00">12:00</span><span class="time-label" data-i18n="dep.midday">Midday</span></li>
+          <li data-reveal style="--d:2"><span class="time" data-time="15:00">15:00</span><span class="time-label" data-i18n="dep.afternoon">Afternoon</span></li>
+          <li data-reveal style="--d:3"><span class="time" data-time="18:00">18:00</span><span class="time-label" data-i18n="dep.evening">Evening</span></li>
         </ul>
         <p class="dep-note" data-reveal>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
@@ -538,6 +568,7 @@
         </div>
       </div>
     </div>
+    <p class="footer-mark" aria-hidden="true">Boka <em>Blue</em></p>
     <div class="container footer-bottom">
       <p>© <span data-year>2026</span> Boka Blue Boat Tours</p>
       <a href="#top" class="link-arrow link-up"><span data-i18n="footer.top">Back to top</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
