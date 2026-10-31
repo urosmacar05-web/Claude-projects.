@@ -1,4 +1,4 @@
-# Volkswagen Golf Plus
+# Volkswagen Golf Plus (automatik)
 
 - Gorivo: dizel
 - Menjač: automatik
