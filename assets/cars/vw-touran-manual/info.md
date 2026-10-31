@@ -1,4 +1,4 @@
-# Volkswagen Touran
+# Volkswagen Touran (manuelni)
 
 - Gorivo: dizel
 - Menjač: manuelni
