@@ -2,28 +2,25 @@
 <html lang="sr-ME">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rent a car | Iznajmljivanje vozila u Crnoj Gori</title>
-  <meta name="description" content="Rent a car u Crnoj Gori. Volkswagen, Škoda i Peugeot, sa automatskim ili manuelnim mjenjačem i do 7 sjedišta. Rezervacije na +382 60 086 745.">
-  <meta name="theme-color" content="#0b0a09">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rent a car Crna Gora</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="Rent a car u Crnoj Gori. Volkswagen, Škoda i Peugeot, automatik ili manuelni, do 7 sjedišta. Rezervacije na +382 60 086 745.">
+  <meta name="theme-color" content="#0a1222">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="img/skoda-octavia/octavia-front.webp">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">Preskoči na sadržaj</a>
-  <div class="grain" aria-hidden="true"></div>
 
   <!-- NAV -->
   <header class="nav" id="nav">
-    <div class="nav__inner container">
+    <div class="nav__inner wrap">
       <a href="#top" class="brand" aria-label="Rent a car, početna">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none"><path d="M4 20l3-7a3 3 0 0 1 2.8-2h12.4a3 3 0 0 1 2.8 2l3 7v4a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1H8v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9.5" cy="19.5" r="1.5" fill="currentColor"/><circle cx="22.5" cy="19.5" r="1.5" fill="currentColor"/></svg>
-        </span>
-        <span class="brand__text">Rent<em>a</em>car</span>
+        <span class="brand__mark" aria-hidden="true">R</span>
+        <span class="brand__text">Rent a car<small>Crna Gora</small></span>
       </a>
 
       <nav class="nav__links" aria-label="Glavna navigacija">
@@ -38,9 +35,9 @@
           <button type="button" class="lang__btn" data-lang="me" aria-pressed="true">ME</button>
           <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <a class="btn btn--gold btn--sm nav__call" href="tel:+38260086745">
+        <a class="btn btn--accent btn--sm nav__call" href="tel:+38260086745">
           <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-          <span data-i18n="nav.call">Pozovite</span>
+          <span>+382 60 086 745</span>
         </a>
       </div>
     </div>
@@ -49,73 +46,91 @@
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
-      <div class="hero__glow" aria-hidden="true"></div>
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow reveal"><span class="eyebrow__line"></span><span data-i18n="hero.eyebrow">Crna Gora · Iznajmljivanje vozila</span></p>
-          <h1 class="hero__title reveal">
-            <span data-i18n="hero.t1">Vozite Crnu Goru</span><br>
-            <em class="gold-text" data-i18n="hero.t2">sa stilom.</em>
-          </h1>
-          <p class="hero__lead reveal" data-i18n="hero.lead">Pažljivo održavana vozila, lična usluga i brza rezervacija jednim pozivom. Od gradskih automobila do porodičnih vozila sa 7 sjedišta.</p>
-          <div class="hero__cta reveal">
-            <a href="#flota" class="btn btn--gold">
-              <span data-i18n="hero.cta1">Pogledajte flotu</span>
-              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a href="https://wa.me/38260086745" class="btn btn--ghost" target="_blank" rel="noopener">
-              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
-              WhatsApp
-            </a>
-          </div>
-          <dl class="hero__stats reveal">
-            <div><dt data-count="9">9</dt><dd data-i18n="hero.s1">vozila u floti</dd></div>
-            <div><dt>7</dt><dd data-i18n="hero.s2">sjedišta maksimalno</dd></div>
-            <div><dt>A/M</dt><dd data-i18n="hero.s3">automatik i manuelni</dd></div>
-          </dl>
+      <div class="hero__sun" aria-hidden="true"></div>
+
+      <div class="hero__visual" aria-label="Škoda Octavia">
+        <div class="hero__slides" id="heroSlides">
+          <img src="img/skoda-octavia/octavia-front.webp" alt="Škoda Octavia, pogled sprijeda" class="is-active" fetchpriority="high">
+          <img src="img/skoda-octavia/octavia-side.webp" alt="Škoda Octavia, bočni profil" loading="lazy">
+          <img src="img/skoda-octavia/octavia-rear.webp" alt="Škoda Octavia, pogled sa zadnje strane" loading="lazy">
+          <img src="img/skoda-octavia/octavia-interior-front.webp" alt="Škoda Octavia, unutrašnjost" loading="lazy">
+        </div>
+        <div class="hero__tint" aria-hidden="true"></div>
+
+        <div class="plate" aria-hidden="true">
+          <span class="plate__eu">MNE</span>
+          <span class="plate__txt">ŠKODA OCTAVIA</span>
         </div>
 
-        <figure class="hero__media reveal" aria-label="Škoda Octavia">
-          <div class="hero__frame">
-            <div class="hero__slides" id="heroSlides">
-              <img src="img/skoda-octavia/octavia-front.webp" alt="Škoda Octavia, pogled sprijeda" class="is-active" fetchpriority="high">
-              <img src="img/skoda-octavia/octavia-side.webp" alt="Škoda Octavia, bočni profil" loading="lazy">
-              <img src="img/skoda-octavia/octavia-rear.webp" alt="Škoda Octavia, pogled sa zadnje strane" loading="lazy">
-              <img src="img/skoda-octavia/octavia-interior-front.webp" alt="Škoda Octavia, unutrašnjost i kontrolna tabla" loading="lazy">
-            </div>
-            <div class="hero__shade" aria-hidden="true"></div>
-            <div class="hero__badge">
-              <span class="hero__badge-k" data-i18n="hero.featured">Izdvojeno vozilo</span>
-              <span class="hero__badge-v">Škoda Octavia</span>
-              <span class="hero__badge-m"><span data-i18n="spec.diesel">Dizel</span> · <span data-i18n="spec.manual">Manuelni</span></span>
-            </div>
-            <div class="hero__progress" id="heroProgress" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </div>
-          </div>
-          <div class="hero__ring" aria-hidden="true"></div>
-        </figure>
+        <div class="hero__thumbs" id="heroThumbs" role="group" aria-label="Fotografije: Škoda Octavia">
+          <button type="button" aria-label="Sprijeda" aria-current="true"><img src="img/skoda-octavia/octavia-front.webp" alt=""><i></i></button>
+          <button type="button" aria-label="Bočno"><img src="img/skoda-octavia/octavia-side.webp" alt="" loading="lazy"><i></i></button>
+          <button type="button" aria-label="Pozadi"><img src="img/skoda-octavia/octavia-rear.webp" alt="" loading="lazy"><i></i></button>
+          <button type="button" aria-label="Unutrašnjost"><img src="img/skoda-octavia/octavia-interior-front.webp" alt="" loading="lazy"><i></i></button>
+        </div>
+
+        <ul class="hero__spec" aria-label="Škoda Octavia">
+          <li data-i18n="spec.diesel">Dizel</li>
+          <li data-i18n="spec.manual">Manuelni</li>
+          <li><span>5</span> <span data-i18n="spec.seats">sjedišta</span></li>
+        </ul>
       </div>
 
-      <a href="#flota" class="scroll-cue" aria-label="Skrolujte do flote">
-        <span></span>
-      </a>
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="pill reveal"><span class="pill__dot"></span><span data-i18n="hero.pill">Iznajmljivanje vozila · Crna Gora</span></p>
+          <h1 class="hero__title reveal">
+            <span class="hero__line" data-i18n="hero.t1">Crna Gora počinje</span>
+            <span class="hero__line hl" data-i18n="hero.t2">iza volana.</span>
+          </h1>
+          <p class="hero__lead reveal" data-i18n="hero.lead">Od Kotora do Durmitora, vozilo za svaki put. Izaberite auto, javite datume i krenite. Rezervacija traje par minuta, pozivom ili porukom.</p>
+
+          <form class="book reveal" id="bookForm" novalidate>
+            <div class="book__field book__field--car">
+              <label for="bookCar" data-i18n="book.car">Vozilo</label>
+              <select id="bookCar"></select>
+            </div>
+            <div class="book__field">
+              <label for="bookFrom" data-i18n="book.from">Preuzimanje</label>
+              <input type="date" id="bookFrom" required>
+            </div>
+            <div class="book__field">
+              <label for="bookTo" data-i18n="book.to">Vraćanje</label>
+              <input type="date" id="bookTo" required>
+            </div>
+            <button type="submit" class="btn btn--accent book__go">
+              <span data-i18n="book.go">Provjeri dostupnost</span>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="book__note" id="bookNote" data-i18n="book.note">Šaljemo upit na WhatsApp. Odgovaramo brzo.</p>
+          </form>
+
+          <ul class="trust reveal">
+            <li><b>9</b> <span data-i18n="trust.cars">vozila</span></li>
+            <li data-i18n="trust.gear">Automatik i manuelni</li>
+            <li data-i18n="trust.seats">Do 7 sjedišta</li>
+            <li data-i18n="trust.fuel">Dizel i benzin</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- MARQUEE -->
+    <!-- DESTINATIONS MARQUEE -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
-        <span>Škoda Octavia</span><i>✦</i><span>Volkswagen Sharan</span><i>✦</i><span>Volkswagen Touran</span><i>✦</i><span>Volkswagen Golf Plus</span><i>✦</i><span>Volkswagen Polo</span><i>✦</i><span>Peugeot 208</span><i>✦</i><span>Peugeot 107</span><i>✦</i>
-        <span>Škoda Octavia</span><i>✦</i><span>Volkswagen Sharan</span><i>✦</i><span>Volkswagen Touran</span><i>✦</i><span>Volkswagen Golf Plus</span><i>✦</i><span>Volkswagen Polo</span><i>✦</i><span>Peugeot 208</span><i>✦</i><span>Peugeot 107</span><i>✦</i>
+        <span>Kotor</span><i></i><span>Budva</span><i></i><span>Durmitor</span><i></i><span>Skadarsko jezero</span><i></i><span>Tivat</span><i></i><span>Kolašin</span><i></i><span>Ulcinj</span><i></i><span>Biogradska gora</span><i></i><span>Herceg Novi</span><i></i><span>Podgorica</span><i></i>
+        <span>Kotor</span><i></i><span>Budva</span><i></i><span>Durmitor</span><i></i><span>Skadarsko jezero</span><i></i><span>Tivat</span><i></i><span>Kolašin</span><i></i><span>Ulcinj</span><i></i><span>Biogradska gora</span><i></i><span>Herceg Novi</span><i></i><span>Podgorica</span><i></i>
       </div>
     </div>
 
     <!-- FLEET -->
     <section class="section fleet" id="flota">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow reveal"><span class="eyebrow__line"></span><span data-i18n="fleet.eyebrow">Naša flota</span></p>
-          <h2 class="section__title reveal" data-i18n-html="fleet.title">Izaberite vozilo <em class="gold-text">za vaše putovanje</em></h2>
+      <div class="wrap">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="label reveal" data-i18n="fleet.eyebrow">Naša flota</p>
+            <h2 class="section__title reveal" data-i18n-html="fleet.title">Izaberite vozilo <span class="hl">za vaš put</span></h2>
+          </div>
           <p class="section__lead reveal" data-i18n="fleet.lead">Kliknite na vozilo da vidite sve fotografije i rezervišete ga direktno.</p>
         </div>
 
@@ -134,10 +149,10 @@
 
     <!-- WHY -->
     <section class="section why" id="zasto">
-      <div class="container">
+      <div class="wrap">
         <div class="section__head">
-          <p class="eyebrow reveal"><span class="eyebrow__line"></span><span data-i18n="why.eyebrow">Zašto mi</span></p>
-          <h2 class="section__title reveal" data-i18n-html="why.title">Iskustvo koje <em class="gold-text">se pamti</em></h2>
+          <p class="label reveal" data-i18n="why.eyebrow">Zašto mi</p>
+          <h2 class="section__title reveal" data-i18n-html="why.title">Manje papira, <span class="hl">više puta</span></h2>
         </div>
         <div class="why__grid">
           <article class="feature reveal">
@@ -166,24 +181,24 @@
 
     <!-- PROCESS -->
     <section class="section process" id="proces">
-      <div class="container">
+      <div class="wrap">
         <div class="section__head">
-          <p class="eyebrow reveal"><span class="eyebrow__line"></span><span data-i18n="how.eyebrow">Kako funkcioniše</span></p>
-          <h2 class="section__title reveal" data-i18n-html="how.title">Tri koraka <em class="gold-text">do ključeva</em></h2>
+          <p class="label reveal" data-i18n="how.eyebrow">Kako funkcioniše</p>
+          <h2 class="section__title reveal" data-i18n-html="how.title">Tri koraka <span class="hl">do ključeva</span></h2>
         </div>
         <ol class="steps">
           <li class="step reveal">
-            <span class="step__n">01</span>
+            <span class="step__n">1</span>
             <h3 data-i18n="how.s1t">Izaberite vozilo</h3>
             <p data-i18n="how.s1d">Pregledajte flotu i pronađite automobil koji odgovara vašem putovanju.</p>
           </li>
           <li class="step reveal">
-            <span class="step__n">02</span>
+            <span class="step__n">2</span>
             <h3 data-i18n="how.s2t">Pozovite ili pišite</h3>
             <p data-i18n="how.s2d">Javite nam datume i vozilo. Potvrđujemo dostupnost i cijenu odmah.</p>
           </li>
           <li class="step reveal">
-            <span class="step__n">03</span>
+            <span class="step__n">3</span>
             <h3 data-i18n="how.s3t">Uživajte u vožnji</h3>
             <p data-i18n="how.s3d">Preuzmite ključeve i istražite Crnu Goru, od obale do planina.</p>
           </li>
@@ -193,18 +208,21 @@
 
     <!-- CTA / CONTACT -->
     <section class="section cta" id="kontakt">
-      <div class="container">
+      <div class="wrap">
         <div class="cta__card reveal">
           <div class="cta__bg" aria-hidden="true">
             <img src="img/vw-sharan/sharan-front-side.webp" alt="" loading="lazy">
           </div>
           <div class="cta__content">
-            <p class="eyebrow eyebrow--center"><span class="eyebrow__line"></span><span data-i18n="cta.eyebrow">Rezervacije</span><span class="eyebrow__line"></span></p>
-            <h2 class="cta__title" data-i18n-html="cta.title">Spremni za <em class="gold-text">put?</em></h2>
+            <p class="label label--center" data-i18n="cta.eyebrow">Rezervacije</p>
+            <h2 class="cta__title" data-i18n-html="cta.title">Spremni za <span class="hl">put?</span></h2>
             <p class="cta__lead" data-i18n="cta.lead">Pozovite nas ili pošaljite poruku. Odgovaramo brzo, na crnogorskom i engleskom.</p>
-            <a class="cta__phone" href="tel:+38260086745">+382 60 086 745</a>
+            <div class="cta__phone">
+              <a href="tel:+38260086745" id="phoneText">+382 60 086 745</a>
+              <button type="button" class="copy" id="copyPhone" data-i18n="cta.copy">Kopiraj</button>
+            </div>
             <div class="cta__actions">
-              <a class="btn btn--gold" href="tel:+38260086745">
+              <a class="btn btn--accent" href="tel:+38260086745">
                 <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
                 <span data-i18n="cta.call">Pozovite</span>
               </a>
@@ -224,16 +242,16 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <a href="#top" class="brand brand--footer">
-        <span class="brand__text">Rent<em>a</em>car</span>
+    <div class="wrap footer__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark" aria-hidden="true">R</span>
+        <span class="brand__text">Rent a car<small>Crna Gora</small></span>
       </a>
-      <p class="footer__meta"><span data-i18n="footer.loc">Crna Gora</span> · <a href="tel:+38260086745">+382 60 086 745</a></p>
+      <p class="footer__meta"><a href="tel:+38260086745">+382 60 086 745</a></p>
       <p class="footer__copy">© <span id="year"></span> Rent a car. <span data-i18n="footer.rights">Sva prava zadržana.</span></p>
     </div>
   </footer>
 
-  <!-- Floating call (mobile) -->
   <a class="fab" href="tel:+38260086745" aria-label="Pozovite +382 60 086 745">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
   </a>
@@ -255,13 +273,13 @@
         <span class="gallery__count" id="galleryCount"></span>
       </div>
       <aside class="gallery__side">
-        <p class="eyebrow"><span class="eyebrow__line"></span><span id="galleryBrand"></span></p>
+        <p class="label" id="galleryBrand"></p>
         <h2 class="gallery__title" id="galleryTitle"></h2>
         <ul class="specs" id="gallerySpecs"></ul>
         <p class="gallery__price" data-i18n="price.request">Cijena na upit</p>
         <div class="gallery__thumbs" id="galleryThumbs"></div>
         <div class="gallery__actions">
-          <a class="btn btn--gold" id="galleryCall" href="tel:+38260086745">
+          <a class="btn btn--accent" href="tel:+38260086745">
             <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
             <span data-i18n="cta.call">Pozovite</span>
           </a>

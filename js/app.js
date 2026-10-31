@@ -1,12 +1,13 @@
 (() => {
   'use strict';
+  document.documentElement.classList.add('js');
 
   const PHONE_WA = '38260086745';
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------------- Fleet data ---------------- */
   const FLEET = [
-    { id: 'skoda-octavia', brand: 'Škoda', model: 'Octavia', fuel: 'diesel', gear: 'manual', seats: 5, featured: true,
+    { id: 'skoda-octavia', brand: 'Škoda', model: 'Octavia', fuel: 'diesel', gear: 'manual', seats: 5,
       imgs: ['octavia-front', 'octavia-side', 'octavia-rear', 'octavia-interior-front'] },
     { id: 'vw-sharan', brand: 'Volkswagen', model: 'Sharan', fuel: 'diesel', gear: 'automatic', seats: 7,
       imgs: ['sharan-front-side', 'sharan-rear-side', 'sharan-rear', 'sharan-interior-front', 'sharan-interior-seats'] },
@@ -32,68 +33,74 @@
     me: {
       'skip': 'Preskoči na sadržaj',
       'nav.fleet': 'Flota', 'nav.why': 'Zašto mi', 'nav.how': 'Kako funkcioniše', 'nav.contact': 'Kontakt', 'nav.call': 'Pozovite',
-      'hero.eyebrow': 'Crna Gora · Iznajmljivanje vozila',
-      'hero.t1': 'Vozite Crnu Goru', 'hero.t2': 'sa stilom.',
-      'hero.lead': 'Pažljivo održavana vozila, lična usluga i brza rezervacija jednim pozivom. Od gradskih automobila do porodičnih vozila sa 7 sjedišta.',
-      'hero.cta1': 'Pogledajte flotu',
-      'hero.s1': 'vozila u floti', 'hero.s2': 'sjedišta maksimalno', 'hero.s3': 'automatik i manuelni',
-      'hero.featured': 'Izdvojeno vozilo',
+      'hero.pill': 'Iznajmljivanje vozila · Crna Gora',
+      'hero.t1': 'Crna Gora počinje', 'hero.t2': 'iza volana.',
+      'hero.lead': 'Od Kotora do Durmitora, vozilo za svaki put. Izaberite auto, javite datume i krenite. Rezervacija traje par minuta, pozivom ili porukom.',
+      'book.car': 'Vozilo', 'book.from': 'Preuzimanje', 'book.to': 'Vraćanje', 'book.go': 'Provjeri dostupnost',
+      'book.note': 'Šaljemo upit na WhatsApp. Odgovaramo brzo.',
+      'book.err': 'Datum vraćanja mora biti poslije datuma preuzimanja.',
+      'book.open': 'WhatsApp se nije otvorio? Kliknite ovdje.',
+      'book.msg': 'Zdravo! Zanima me {car} od {from} do {to}. Da li je dostupno i koja je cijena?',
+      'trust.cars': 'vozila', 'trust.gear': 'Automatik i manuelni', 'trust.seats': 'Do 7 sjedišta', 'trust.fuel': 'Dizel i benzin',
       'fleet.eyebrow': 'Naša flota',
-      'fleet.title': 'Izaberite vozilo <em class="gold-text">za vaše putovanje</em>',
+      'fleet.title': 'Izaberite vozilo <span class="hl">za vaš put</span>',
       'fleet.lead': 'Kliknite na vozilo da vidite sve fotografije i rezervišete ga direktno.',
       'filter.all': 'Sva vozila', 'filter.auto': 'Automatik', 'filter.manual': 'Manuelni', 'filter.diesel': 'Dizel', 'filter.petrol': 'Benzin', 'filter.seven': '7 sjedišta',
       'spec.diesel': 'Dizel', 'spec.petrol': 'Benzin', 'spec.manual': 'Manuelni', 'spec.automatic': 'Automatik', 'spec.seats': 'sjedišta',
-      'tag.featured': 'Izdvojeno', 'tag.seven': '7 sjedišta',
+      'tag.seven': '7 sjedišta',
       'price.request': 'Cijena na upit', 'car.more': 'Detalji',
-      'why.eyebrow': 'Zašto mi', 'why.title': 'Iskustvo koje <em class="gold-text">se pamti</em>',
+      'why.eyebrow': 'Zašto mi', 'why.title': 'Manje papira, <span class="hl">više puta</span>',
       'why.f1t': 'Brza rezervacija', 'why.f1d': 'Jedan poziv ili poruka na WhatsApp i Viber. Bez dugih formulara i čekanja.',
       'why.f2t': 'Automatik ili manuelni', 'why.f2d': 'Birajte mjenjač koji vam odgovara. U floti imamo oba tipa, na dizel i benzin.',
       'why.f3t': 'Do 7 sjedišta', 'why.f3d': 'Prostrani VW Sharan i Touran za porodice i grupe, sa dosta mjesta za prtljag.',
       'why.f4t': 'Lična usluga', 'why.f4d': 'Razgovarate direktno sa nama. Uvijek dostupni za pitanja prije, tokom i poslije najma.',
-      'how.eyebrow': 'Kako funkcioniše', 'how.title': 'Tri koraka <em class="gold-text">do ključeva</em>',
+      'how.eyebrow': 'Kako funkcioniše', 'how.title': 'Tri koraka <span class="hl">do ključeva</span>',
       'how.s1t': 'Izaberite vozilo', 'how.s1d': 'Pregledajte flotu i pronađite automobil koji odgovara vašem putovanju.',
       'how.s2t': 'Pozovite ili pišite', 'how.s2d': 'Javite nam datume i vozilo. Potvrđujemo dostupnost i cijenu odmah.',
       'how.s3t': 'Uživajte u vožnji', 'how.s3d': 'Preuzmite ključeve i istražite Crnu Goru, od obale do planina.',
-      'cta.eyebrow': 'Rezervacije', 'cta.title': 'Spremni za <em class="gold-text">put?</em>',
+      'cta.eyebrow': 'Rezervacije', 'cta.title': 'Spremni za <span class="hl">put?</span>',
       'cta.lead': 'Pozovite nas ili pošaljite poruku. Odgovaramo brzo, na crnogorskom i engleskom.',
-      'cta.call': 'Pozovite',
+      'cta.call': 'Pozovite', 'cta.copy': 'Kopiraj', 'cta.copied': 'Kopirano',
       'gallery.book': 'Rezerviši na WhatsApp',
       'footer.loc': 'Crna Gora', 'footer.rights': 'Sva prava zadržana.',
       'wa.msg': 'Zdravo! Zanima me iznajmljivanje vozila {car}. Da li je dostupno za datume: ',
-      'title': 'Rent a car | Iznajmljivanje vozila u Crnoj Gori',
+      'title': 'Rent a car Crna Gora',
     },
     en: {
       'skip': 'Skip to content',
       'nav.fleet': 'Fleet', 'nav.why': 'Why us', 'nav.how': 'How it works', 'nav.contact': 'Contact', 'nav.call': 'Call us',
-      'hero.eyebrow': 'Montenegro · Car rental',
-      'hero.t1': 'Drive Montenegro', 'hero.t2': 'in style.',
-      'hero.lead': 'Well-kept cars, personal service and fast booking with a single call. From city cars to 7-seat family vehicles.',
-      'hero.cta1': 'View the fleet',
-      'hero.s1': 'cars in the fleet', 'hero.s2': 'seats maximum', 'hero.s3': 'automatic & manual',
-      'hero.featured': 'Featured car',
+      'hero.pill': 'Car rental · Montenegro',
+      'hero.t1': 'Montenegro starts', 'hero.t2': 'behind the wheel.',
+      'hero.lead': 'From Kotor to Durmitor, a car for every road. Pick a car, send your dates and go. Booking takes a few minutes, by phone or message.',
+      'book.car': 'Car', 'book.from': 'Pick-up', 'book.to': 'Return', 'book.go': 'Check availability',
+      'book.note': 'We send your request via WhatsApp. We reply fast.',
+      'book.err': 'The return date must be after the pick-up date.',
+      'book.open': 'WhatsApp did not open? Click here.',
+      'book.msg': 'Hello! I am interested in the {car} from {from} to {to}. Is it available, and what is the price?',
+      'trust.cars': 'cars', 'trust.gear': 'Automatic & manual', 'trust.seats': 'Up to 7 seats', 'trust.fuel': 'Diesel & petrol',
       'fleet.eyebrow': 'Our fleet',
-      'fleet.title': 'Choose a car <em class="gold-text">for your journey</em>',
+      'fleet.title': 'Choose a car <span class="hl">for your trip</span>',
       'fleet.lead': 'Tap any car to see all photos and book it directly.',
       'filter.all': 'All cars', 'filter.auto': 'Automatic', 'filter.manual': 'Manual', 'filter.diesel': 'Diesel', 'filter.petrol': 'Petrol', 'filter.seven': '7 seats',
       'spec.diesel': 'Diesel', 'spec.petrol': 'Petrol', 'spec.manual': 'Manual', 'spec.automatic': 'Automatic', 'spec.seats': 'seats',
-      'tag.featured': 'Featured', 'tag.seven': '7 seats',
+      'tag.seven': '7 seats',
       'price.request': 'Price on request', 'car.more': 'Details',
-      'why.eyebrow': 'Why us', 'why.title': 'An experience <em class="gold-text">to remember</em>',
+      'why.eyebrow': 'Why us', 'why.title': 'Less paperwork, <span class="hl">more road</span>',
       'why.f1t': 'Fast booking', 'why.f1d': 'One call or a message on WhatsApp or Viber. No long forms, no waiting.',
       'why.f2t': 'Automatic or manual', 'why.f2d': 'Pick the gearbox you prefer. Our fleet has both, in diesel and petrol.',
       'why.f3t': 'Up to 7 seats', 'why.f3d': 'Spacious VW Sharan and Touran for families and groups, with plenty of luggage room.',
       'why.f4t': 'Personal service', 'why.f4d': 'You talk to us directly. Always available for questions before, during and after your rental.',
-      'how.eyebrow': 'How it works', 'how.title': 'Three steps <em class="gold-text">to the keys</em>',
+      'how.eyebrow': 'How it works', 'how.title': 'Three steps <span class="hl">to the keys</span>',
       'how.s1t': 'Choose a car', 'how.s1d': 'Browse the fleet and find the car that fits your trip.',
       'how.s2t': 'Call or message', 'how.s2d': 'Tell us your dates and car. We confirm availability and price right away.',
       'how.s3t': 'Enjoy the drive', 'how.s3d': 'Pick up the keys and explore Montenegro, from the coast to the mountains.',
-      'cta.eyebrow': 'Bookings', 'cta.title': 'Ready for the <em class="gold-text">road?</em>',
+      'cta.eyebrow': 'Bookings', 'cta.title': 'Ready for the <span class="hl">road?</span>',
       'cta.lead': 'Call us or send a message. We reply fast, in Montenegrin and English.',
-      'cta.call': 'Call us',
+      'cta.call': 'Call us', 'cta.copy': 'Copy', 'cta.copied': 'Copied',
       'gallery.book': 'Book on WhatsApp',
       'footer.loc': 'Montenegro', 'footer.rights': 'All rights reserved.',
       'wa.msg': 'Hello! I am interested in renting the {car}. Is it available for these dates: ',
-      'title': 'Rent a car | Car rental in Montenegro',
+      'title': 'Rent a car Crna Gora',
     },
   };
 
@@ -111,6 +118,7 @@
     document.querySelectorAll('[data-i18n-html]').forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
     document.querySelectorAll('.lang__btn').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
     renderFleet();
+    fillBookSelect();
     if (gallery.open && currentCar) fillGallerySide(currentCar);
   }
 
@@ -149,9 +157,7 @@
     cardTimers.clear();
     grid.innerHTML = FLEET.map((car, i) => {
       const name = `${car.brand} ${car.model}`;
-      const tag = car.featured
-        ? `<span class="car__tag car__tag--gold">${t('tag.featured')}</span>`
-        : car.seats === 7 ? `<span class="car__tag">${t('tag.seven')}</span>` : '';
+      const tag = car.seats === 7 ? `<span class="car__tag">${t('tag.seven')}</span>` : '';
       return `
       <li class="car reveal${matches(car, activeFilter) ? '' : ' is-hidden'}" data-i="${i}" style="--d:${(i % 3) * 0.08}s">
         <button type="button" class="car__btn" aria-label="${name}, ${t('spec.' + car.fuel)}, ${t('spec.' + car.gear)}">
@@ -217,26 +223,75 @@
   /* ---------------- Hero slideshow ---------------- */
   (function hero() {
     const imgs = document.querySelectorAll('#heroSlides img');
-    const bars = document.querySelectorAll('#heroProgress span');
+    const thumbs = document.querySelectorAll('#heroThumbs button');
     const DUR = 5500;
-    let i = 0;
+    let i = 0, timer = null;
     document.documentElement.style.setProperty('--hero-dur', DUR + 'ms');
     const show = (n) => {
+      i = n;
       imgs.forEach((im, k) => {
         if (k === n) { im.classList.remove('is-active'); void im.offsetWidth; im.classList.add('is-active'); }
         else im.classList.remove('is-active');
       });
-      bars.forEach((b, k) => { b.classList.remove('is-active'); b.classList.toggle('is-done', k < n); });
-      if (bars[n]) { void bars[n].offsetWidth; bars[n].classList.add('is-active'); }
+      thumbs.forEach((b, k) => {
+        b.setAttribute('aria-current', String(k === n));
+        b.classList.remove('is-running');
+        if (k === n && !reduceMotion) { void b.offsetWidth; b.classList.add('is-running'); }
+      });
     };
-    show(0);
-    if (reduceMotion) return;
-    let timer = setInterval(() => { i = (i + 1) % imgs.length; show(i); }, DUR);
-    document.addEventListener('visibilitychange', () => {
-      clearInterval(timer);
-      if (!document.hidden) timer = setInterval(() => { i = (i + 1) % imgs.length; show(i); }, DUR);
-    });
+    const start = () => { clearInterval(timer); if (!reduceMotion) timer = setInterval(() => show((i + 1) % imgs.length), DUR); };
+    thumbs.forEach((b, k) => b.addEventListener('click', () => { show(k); start(); }));
+    document.addEventListener('visibilitychange', () => { clearInterval(timer); if (!document.hidden) start(); });
+    show(0); start();
   })();
+
+  /* ---------------- Booking bar ---------------- */
+  const bookForm = document.getElementById('bookForm');
+  const bookCar = document.getElementById('bookCar');
+  const bookFrom = document.getElementById('bookFrom');
+  const bookTo = document.getElementById('bookTo');
+  const bookNote = document.getElementById('bookNote');
+  const carLabel = (c) => `${c.brand} ${c.model} · ${t('spec.' + c.fuel)} · ${t('spec.' + c.gear)}${c.seats === 7 ? ' · 7' : ''}`;
+  function fillBookSelect() {
+    const v = bookCar.value || '0';
+    bookCar.innerHTML = FLEET.map((c, k) => `<option value="${k}">${carLabel(c)}</option>`).join('');
+    bookCar.value = v;
+  }
+  const iso = (d) => new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  const today = new Date();
+  const plus = (n) => { const d = new Date(today); d.setDate(d.getDate() + n); return d; };
+  bookFrom.min = iso(today); bookTo.min = iso(today);
+  bookFrom.value = iso(plus(1)); bookTo.value = iso(plus(4));
+  bookFrom.addEventListener('change', () => {
+    bookTo.min = bookFrom.value;
+    if (bookTo.value <= bookFrom.value) { const d = new Date(bookFrom.value); d.setDate(d.getDate() + 3); bookTo.value = iso(d); }
+  });
+  const fmt = (v) => v.split('-').reverse().join('.');
+  bookForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    bookNote.classList.remove('is-error');
+    if (!bookFrom.value || !bookTo.value || bookTo.value <= bookFrom.value) {
+      bookNote.textContent = t('book.err'); bookNote.classList.add('is-error'); bookTo.focus(); return;
+    }
+    const car = FLEET[+bookCar.value];
+    const msg = t('book.msg').replace('{car}', `${car.brand} ${car.model} (${t('spec.' + car.fuel)}, ${t('spec.' + car.gear)})`)
+      .replace('{from}', fmt(bookFrom.value)).replace('{to}', fmt(bookTo.value));
+    const url = `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(msg)}`;
+    bookNote.innerHTML = '';
+    const a = document.createElement('a');
+    a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = t('book.open');
+    a.style.color = 'var(--accent-2)'; a.style.textDecoration = 'underline';
+    bookNote.appendChild(a);
+    a.click();
+  });
+
+  /* Copy phone */
+  const copyBtn = document.getElementById('copyPhone');
+  copyBtn.addEventListener('click', () => {
+    const done = () => { copyBtn.textContent = t('cta.copied'); setTimeout(() => { copyBtn.textContent = t('cta.copy'); }, 1800); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents(document.getElementById('phoneText')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try { navigator.clipboard.writeText('+382 60 086 745').then(done, fallback); } catch { fallback(); }
+  });
 
   /* ---------------- Gallery ---------------- */
   const gallery = document.getElementById('gallery');
