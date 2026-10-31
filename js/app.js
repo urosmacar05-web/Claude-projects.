@@ -3,6 +3,9 @@
   document.documentElement.classList.add('js');
 
   const PHONE_WA = '38260086745';
+  // Google review link: replace with the business's own "write a review" link
+  // (https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID) once available.
+  const GOOGLE_REVIEW_URL = 'https://www.google.com/search?q=' + encodeURIComponent('Rent a car +382 60 086 745');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------------- Fleet data ---------------- */
@@ -62,6 +65,9 @@
       'cta.lead': 'Pozovite nas ili pošaljite poruku. Odgovaramo brzo, na crnogorskom i engleskom.',
       'cta.call': 'Pozovite', 'cta.copy': 'Kopiraj', 'cta.copied': 'Kopirano',
       'gallery.book': 'Rezerviši na WhatsApp',
+      'review.badge': 'Recenzije', 'review.title': 'Zadovoljni vožnjom? <span class="hl">Ocijenite nas.</span>',
+      'review.lead': 'Vaša ocjena na Google-u pomaže drugim putnicima da nas pronađu. Traje manje od minute.',
+      'review.cta': 'Ostavite recenziju na Google-u',
       'footer.loc': 'Crna Gora', 'footer.rights': 'Sva prava zadržana.',
       'wa.msg': 'Zdravo! Zanima me iznajmljivanje vozila {car}. Da li je dostupno za datume: ',
       'title': 'Rent a car Crna Gora',
@@ -98,6 +104,9 @@
       'cta.lead': 'Call us or send a message. We reply fast, in Montenegrin and English.',
       'cta.call': 'Call us', 'cta.copy': 'Copy', 'cta.copied': 'Copied',
       'gallery.book': 'Book on WhatsApp',
+      'review.badge': 'Reviews', 'review.title': 'Enjoyed the drive? <span class="hl">Rate us.</span>',
+      'review.lead': 'Your Google review helps other travellers find us. It takes less than a minute.',
+      'review.cta': 'Leave a Google review',
       'footer.loc': 'Montenegro', 'footer.rights': 'All rights reserved.',
       'wa.msg': 'Hello! I am interested in renting the {car}. Is it available for these dates: ',
       'title': 'Rent a car Crna Gora',
@@ -386,6 +395,7 @@
     lang = b.dataset.lang; store.set('lang', lang); applyLang();
   }));
 
+  document.querySelectorAll('.js-review').forEach((a) => { a.href = GOOGLE_REVIEW_URL; });
   document.getElementById('year').textContent = new Date().getFullYear();
   applyLang();
 })();
