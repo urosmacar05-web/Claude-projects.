@@ -103,3 +103,11 @@ Polja: datum (dropdown), broj osoba, ime i prezime, e-mail, telefon, poruka, dug
 6. **Palais d'Or**: tamnozelena (#041b0f-ish) + zlatni/bež akcent, veliki serif naslov preko fotografije jela, "The Art of Flavors" 3 kartice (Aperitivi/Main/Drinks) sa tankim linijama.
 
 Zajednički pravac (moj zaključak, potvrditi): tamna šumsko-zelena (uklapa se u zelenu boju starog sajta i ime "Parco") + topli krem/bež + bakarno/zlatni akcent; elegantan serif + rukopisni naslov; hero sa velikom fotografijom; rezervacija odmah vidljiva; meni po kategorijama; mapa + radno vrijeme.
+
+## ODLUKE (potvrđeno od korisnika)
+- Tehnologija: čisti HTML/CSS/JS (bez build koraka), GSAP/CSS animacije, mobile-first, brzo učitavanje
+- Jezici: srpski + engleski (prekidač)
+- Stil: tamna šumska zelena + zlato/bakar, elegantan serif + rukopisni naslovi
+- Telefon: +387 57 344-744
+- Rezervacija: forma (datum, vrijeme, broj osoba, ime, poruka) otvara WhatsApp na +38757344744 sa gotovom porukom
+- Budžet/cilj: premium izgled ("vrijedan 10.000$"), animacije moraju biti glatke na telefonima, poštovati prefers-reduced-motion
