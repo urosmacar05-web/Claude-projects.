@@ -114,3 +114,10 @@ Zajednički pravac (moj zaključak, potvrditi): tamna šumsko-zelena (uklapa se 
 - Adresa: Zmaj Jovina 17, Srpsko Sarajevo, 71123
 - Radno vrijeme: 07:00–23:00
 - Instagram: @alparco_ristorante
+
+## Enterijer (enterijer/screenshot-1..4.jpg) – screenshotovi sa starog sajta, još stižu
+1. Bar sa žutim visećim lampama, zelena lisnata ploča na pultu
+2. Natkrivena terasa sa pletenim stolicama
+3. Salon sa krem foteljama, policom za vina, boca vina + čaša (detalj)
+4. Visoki barski stolovi sa biljkama + zid od kamena sa zelenim neonskim logom "Al Parco" (rukopisni font)
+Napomena: realni enterijer je svijetao (krem/drvo/žuto), pa će tamna tema ići u hero/sekcije uz tople prelaze. Screenshotovi su niske rezolucije i imaju browser UI – po mogućnosti tražiti originale; logo je rukopisni zeleni "Al Parco".
