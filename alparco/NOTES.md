@@ -111,3 +111,6 @@ Zajednički pravac (moj zaključak, potvrditi): tamna šumsko-zelena (uklapa se 
 - Telefon: +387 57 344-744
 - Rezervacija: forma (datum, vrijeme, broj osoba, ime, poruka) otvara WhatsApp na +38757344744 sa gotovom porukom
 - Budžet/cilj: premium izgled ("vrijedan 10.000$"), animacije moraju biti glatke na telefonima, poštovati prefers-reduced-motion
+- Adresa: Zmaj Jovina 17, Srpsko Sarajevo, 71123
+- Radno vrijeme: 07:00–23:00
+- Instagram: @alparco_ristorante
