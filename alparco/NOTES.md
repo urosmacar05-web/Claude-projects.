@@ -121,3 +121,10 @@ Zajednički pravac (moj zaključak, potvrditi): tamna šumsko-zelena (uklapa se 
 3. Salon sa krem foteljama, policom za vina, boca vina + čaša (detalj)
 4. Visoki barski stolovi sa biljkama + zid od kamena sa zelenim neonskim logom "Al Parco" (rukopisni font)
 Napomena: realni enterijer je svijetao (krem/drvo/žuto), pa će tamna tema ići u hero/sekcije uz tople prelaze. Screenshotovi su niske rezolucije i imaju browser UI – po mogućnosti tražiti originale; logo je rukopisni zeleni "Al Parco".
+
+## SAJT – verzija 1 (site/)
+- Dodatne odluke: jedna duga početna + poseban meni.html; tekstualni jelovnik, prave slike samo za NOVO jela; bez cijena (price: null u menu-data.js); počelo sa 4 enterijer screenshota
+- Font: Playfair Display (Cormorant odbačen – loše kvačice na č/ž/š) + Karla + Allura (logo); hostovano lokalno
+- Ispravljeni nazivi sa starog sajta: Capricoza→Capricciosa, Panacota→Panna cotta, Foccacio→Focaccia, Kutijevo→Kutjevo, Plantaže 13. juli→13. jul, Palačinci→Palačinke, "dimsi"→dimljeni sir
+- Adresa prikazana kao "Istočno Sarajevo" (korisnik napisao "Srpsko Sarajevo") – potvrditi
+- Čeka: originalne fotografije enterijera/jela u većoj rezoluciji, cijene, pravi logo (vektorski)

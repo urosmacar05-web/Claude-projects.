@@ -1,0 +1,133 @@
+/* Prevodi. Srpski tekst je u samom HTML-u (dobro za SEO i rad bez JS-a);
+   ovdje su engleske verzije za [data-i18n] ključeve + dinamički tekstovi. */
+window.AP_EN = {
+  "skip": "Skip to content",
+  "nav.about": "About",
+  "nav.kitchen": "Kitchen",
+  "nav.menu": "Menu",
+  "nav.space": "Interior",
+  "nav.contact": "Contact",
+  "nav.reserve": "Reservations",
+  "nav.open": "Open menu",
+  "cta.reserve": "Book a table",
+  "cta.menu": "View the menu",
+  "cta.fullmenu": "Full menu",
+
+  "hero.eyebrow": "Ristorante · East Sarajevo",
+  "hero.l1": "Italian cuisine,",
+  "hero.l2": "by the park.",
+  "hero.lead": "From the first morning espresso to a late dinner with a glass of wine, a place to slow down, every day from 7 am to 11 pm.",
+
+  "about.eyebrow": "Welcome",
+  "about.title": "A place for <em>every</em> part of the day",
+  "about.p1": "Al Parco is a restaurant and café beside the largest park in East Sarajevo, a short walk from the bus station. Mornings start with espresso and breakfast, lunch brings risotto and pasta, and evenings belong to veal fillet in sesame and a glass of Tvrdoš.",
+  "about.p2": "Italian cooking, seasonal produce and Balkan warmth, in a room of light wood and stone, with a covered terrace made for long conversations.",
+  "about.f1": "Open every day",
+  "about.f2k": "Terrace",
+  "about.f2": "Covered, by the park",
+  "about.f3k": "Wine",
+  "about.f3": "Tvrdoš, Vukoje, Kutjevo…",
+
+  "feat.eyebrow": "From our kitchen",
+  "feat.title": "New on the <em>menu</em>",
+
+  "menu.eyebrow": "Menu",
+  "menu.title": "From breakfast to <em>dolce</em>",
+
+  "space.eyebrow": "Ambience",
+  "space.title": "A space that invites you <em>to stay</em>",
+  "space.lead": "Light wood, stone and greenery: a bar for morning coffee, a lounge for dinner and a terrace for summer evenings.",
+  "space.c1": "Bar",
+  "space.c2": "Terrace",
+  "space.c3": "Lounge",
+  "space.c4": "Dining room",
+  "space.c5": "Wine list",
+
+  "res.script": "See you soon",
+  "res.eyebrow": "Reservations",
+  "res.title": "Book a <em>table</em>",
+  "res.lead": "Fill in the form and a ready-to-send message will open in WhatsApp. Your booking is confirmed once we reply.",
+  "res.date": "Date",
+  "res.time": "Time",
+  "res.guests": "Guests",
+  "res.guestsHelp": "For groups larger than 20, please call us.",
+  "res.name": "Full name",
+  "res.phone": "Phone",
+  "res.optional": "(optional)",
+  "res.note": "Note",
+  "res.notePh": "E.g. terrace table, birthday, high chair…",
+  "res.submit": "Send via WhatsApp",
+  "res.alt": "Prefer to call?",
+  "res.thanks": "Grazie!",
+  "res.successText": "WhatsApp is opening with your message. If it didn't open, tap below.",
+  "res.openWa": "Open WhatsApp",
+
+  "contact.eyebrow": "Contact",
+  "contact.title": "Find <em>us</em>",
+  "contact.address": "Address",
+  "contact.hours": "Opening hours",
+  "contact.everyday": "Monday – Sunday",
+  "contact.phone": "Phone",
+  "contact.maps": "Open in Google Maps",
+  "contact.call": "Call us",
+
+  "footer.tag": "Ristorante · East Sarajevo",
+  "footer.hours": "daily 7 am – 11 pm",
+  "footer.top": "Back to top",
+
+  /* meni.html */
+  "mp.eyebrow": "Al Parco · Ristorante",
+  "mp.title": "Menu",
+  "mp.lead": "Italian classics, house specialities and Balkan wines. For prices and the daily offer, call us or ask your waiter.",
+  "mp.photo": "photo",
+  "mp.ctaTitle": "Hungry yet?",
+  "mp.ctaText": "Book a table in a few seconds via WhatsApp.",
+  "mp.back": "Home",
+
+  /* aria */
+  "aria.prevDish": "Previous dish",
+  "aria.nextDish": "Next dish",
+  "aria.less": "Fewer guests",
+  "aria.more": "More guests",
+  "aria.close": "Close",
+  "aria.prevImg": "Previous image",
+  "aria.nextImg": "Next image",
+  "aria.scroll": "Scroll down"
+};
+
+window.AP_STR = {
+  sr: {
+    open: "Otvoreno sada · do 23:00",
+    closed: "Zatvoreno · otvaramo u 07:00",
+    chooseTime: "Izaberite vrijeme",
+    errDate: "Izaberite datum.",
+    errDatePast: "Datum ne može biti u prošlosti.",
+    errTime: "Izaberite vrijeme dolaska.",
+    errName: "Upišite ime i prezime.",
+    errPhone: "Provjerite broj telefona.",
+    noTimes: "Danas više nema slobodnih termina",
+    waHello: "Dobar dan! Želio/la bih rezervisati sto u Al Parco.",
+    waDate: "Datum", waTime: "Vrijeme", waGuests: "Broj osoba", waName: "Ime", waPhone: "Telefon", waNote: "Napomena",
+    waThanks: "Hvala!",
+    dish: "jelo",
+    items: "jela",
+    locale: "sr-Latn-BA"
+  },
+  en: {
+    open: "Open now · until 11 pm",
+    closed: "Closed · opens at 7 am",
+    chooseTime: "Choose a time",
+    errDate: "Please choose a date.",
+    errDatePast: "The date can't be in the past.",
+    errTime: "Please choose an arrival time.",
+    errName: "Please enter your name.",
+    errPhone: "Please check the phone number.",
+    noTimes: "No more times available today",
+    waHello: "Hello! I would like to book a table at Al Parco.",
+    waDate: "Date", waTime: "Time", waGuests: "Guests", waName: "Name", waPhone: "Phone", waNote: "Note",
+    waThanks: "Thank you!",
+    dish: "dish",
+    items: "dishes",
+    locale: "en-GB"
+  }
+};
