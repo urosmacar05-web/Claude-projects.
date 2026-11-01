@@ -93,3 +93,13 @@ Polja: datum (dropdown), broj osoba, ime i prezime, e-mail, telefon, poruka, dug
 ## TODO
 - Eventualno fale: ostatak DEZERTA i PIĆA (sokovi, kafa, žestoka...), cijene, radno vrijeme, adresa, telefon
 - Slike enterijera: pretraga nije našla izvor (vidi dolje)
+
+## Inspiracija (inspiracija/insp-1..6.jpg) – kombinovati kad korisnik kaže "pravi stranicu"
+1. **La Luce** (modern italian): puni hero sa krupnom fotografijom jela, razmaknuti serif logo, luk-linija sa tačkom kao dekor, horizontalni karusel fotografija jela, krem sekcija sa narandžastim akcentom, mozaik slika (enterijer/tanjiri/vinski regal).
+2. **Zeleni tamni food layout**: duboka zelena pozadina, tanjiri odozgo (flat lay) koji "izlaze" iz sekcija, začini/začinsko bilje kao dekor, rukopisni naslovi.
+3. **La Casa**: topla bež paleta, tanki elegantni serif naslovi, forma za rezervaciju (datum/vrijeme/broj osoba) zalijepljena na dno hero-a, kolaž slika sa kružnim tekstom, meni kao lista kategorija pored velike slike, mapa + crni blok Location/Hours, bež footer.
+4. **Hungrybuzz**: tamna smeđa/crna tema, rukopisni (script) naslov preko fotografije enterijera, sekcija "Reserve Your Table" sa horizontalnom formom i bakarnim dugmetom, About sa kružnim tekstom oko slike.
+5. **Nique**: vrlo tamna zelenkasta, kinematografski enterijer, split ekran rezervacije (slika lijevo, forma desno), zaobljeno krem dugme.
+6. **Palais d'Or**: tamnozelena (#041b0f-ish) + zlatni/bež akcent, veliki serif naslov preko fotografije jela, "The Art of Flavors" 3 kartice (Aperitivi/Main/Drinks) sa tankim linijama.
+
+Zajednički pravac (moj zaključak, potvrditi): tamna šumsko-zelena (uklapa se u zelenu boju starog sajta i ime "Parco") + topli krem/bež + bakarno/zlatni akcent; elegantan serif + rukopisni naslov; hero sa velikom fotografijom; rezervacija odmah vidljiva; meni po kategorijama; mapa + radno vrijeme.
